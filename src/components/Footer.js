@@ -34,7 +34,7 @@ const Footer  = () => {
                 <div className="email">
                     <h4>
                     <FaMailBulk size={20} style={{color:"#fff", marginRight:"2rem"}}/>
-                    <p>sreyas.sc@gmail.com</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sreyas.sc@gmail.com</p>
                     </h4>                   
                 </div>
 
