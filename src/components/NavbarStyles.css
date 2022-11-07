@@ -45,6 +45,7 @@
         width: 350px;
         height: 100vh;
         background: rgba(0, 0, 0, 1);
+        margin: 0 0 0 -10;
         /*background: rgba(0, 0, 0, 1);*/
         position: absolute;
         top: 0;
