@@ -28,7 +28,7 @@ const Footer  = () => {
                 <div className="phone">
                     <div>
                     <FaPhone size={20} style={{color:"#fff", marginRight:"1rem"}}/>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-8111904512</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:8111904512">+91-8111904512</a></p>
                     </div>                    
                 </div>
                 <div className="email">
@@ -83,10 +83,10 @@ const Footer  = () => {
         className="linkedin social">
         <FontAwesomeIcon icon={faLinkedin} size="2x" style={{marginRight:'1rem'}}/>
       </a>
-      /*<a href="href='t.me/@sreyas_s"
+      <a href="href='t.me/@sreyas_s"
         className="telegram social">
         <FontAwesomeIcon icon={faTelegram} size="2x" style={{marginRight:'1rem'}}/>
-      </a>*/
+      </a>
 </div>
             </div> 
         </div>
