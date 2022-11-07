@@ -43,7 +43,7 @@ const Footer  = () => {
              <div className="right">
                 <h4>About Me</h4>
                 <p>This is Sreyas.
-                 I'm a developer currenlty pursuing my Masters at CET
+                 I'm a developer currenlty pursuing my Masters at <a href="https://www.cet.ac.in/">CET</a>
                  </p>
                 {/* <div className="social">
                  <FaFacebook size={30} style={{color:"#fff", marginRight:"1rem"}}/>
@@ -83,10 +83,10 @@ const Footer  = () => {
         className="linkedin social">
         <FontAwesomeIcon icon={faLinkedin} size="2x" style={{marginRight:'1rem'}}/>
       </a>
-      <a href="href='t.me/@sreyas_s"
+      /*<a href="href='t.me/@sreyas_s"
         className="telegram social">
         <FontAwesomeIcon icon={faTelegram} size="2x" style={{marginRight:'1rem'}}/>
-      </a>
+      </a>*/
 </div>
             </div> 
         </div>
