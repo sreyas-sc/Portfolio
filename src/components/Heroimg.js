@@ -7,7 +7,7 @@ const Heroimg = () => {
   return (
     <div className="hero">
         <div className="mask">
-            <img className="intro-img" src={IntroImg} alt="IntroImg"/></div>
+            <img className="intro-img" src="https://wallpapercave.com/dwp2x/wp3536814.jpg" alt="IntroImg"/></div>
             <div className="content">
                 <p><b>Hi! I'm sreyas</b></p>
                     <h1>Developer</h1>
