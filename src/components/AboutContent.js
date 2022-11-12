@@ -11,7 +11,7 @@ const AboutContent = () => {
             <p>2022 - Present: Pursuing MCA at <a href="https://www.cet.ac.in/"><u>CET</u></a></p>
             <p>2021 - 2022: Software Analyst(L3) at <a href="https://www.claysys.com/"><u>Claysys Technologies</u></a></p>
             <Link to="/Contact">
-                <br><button className="btn">Contact</button>
+                <button className="btn">Contact</button>
             </Link>
         </div>
     </div>
