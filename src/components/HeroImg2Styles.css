@@ -7,7 +7,7 @@
 
 .hero-img::before{
     content: "";
-    background-image: url("https://wallpapercave.com/dwp2x/wp6474683.jpg"); 
+    background-image: url("https://images.unsplash.com/photo-1460355976672-71c3f0a4bdac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"); 
     background-size: cover;
     background-position: center top;
     height: 100%;
