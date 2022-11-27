@@ -8,7 +8,7 @@ const Heroimg = () => {
     <div className="hero">
         <div className="mask">
            
-            <img src="https://thumbs.gfycat.com/CreamyFelineCurlew-max-1mb.gif"/></div>
+            <img src="https://thumbs.gfycat.com/CreamyFelineCurlew-max-1mb.gif" width=100% height=100%/></div>
             <div className="content">
                 <p><b>Hi! I'm sreyas</b></p>
                     <h1>Developer</h1>
