@@ -1,0 +1,39 @@
+.template-collect {
+    padding: 20px;
+  }
+  
+  .template-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .template-item {
+    flex: 1;
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .template-preview img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .template-details {
+    flex: 1;
+  }
+  
+  .use-template-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
