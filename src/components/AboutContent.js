@@ -2,8 +2,8 @@ import "./AboutContentStyles.css";
 import React from 'react';
 //import { Link } from "react-router-dom";
 
-import IntroImg from "../assets/Sreyas_Official_Resume(1).pdf"
-
+import IntroImg from "../assets/Sreyas_Official_Resume (1).pdf"
+src/assets/
 const AboutContent = () => {
   return (
     <div className="content">
