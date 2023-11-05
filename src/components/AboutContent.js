@@ -2,7 +2,7 @@ import "./AboutContentStyles.css";
 import React from 'react';
 //import { Link } from "react-router-dom";
 
-import IntroImg from "../assets/Sreyas_S_Resume.pdf"
+import IntroImg from "../assets/Sreyas_Official_Resume(1).pdf"
 
 const AboutContent = () => {
   return (
