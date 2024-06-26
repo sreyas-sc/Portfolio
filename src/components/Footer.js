@@ -14,7 +14,7 @@ const Footer  = () => {
         <div className="footer-container">
             <div className="left">
                 <div className="location">
-                    <FaHome size={20} style={{color:"#fff", marginRight:"2rem"}}/>
+                    <FaHome size={20} style={{color:"#2e2e2f", marginRight:"2rem"}}/>
                     <div>
                         <p>ChalilNikarth</p>
                         <p>Andhakaranazhy P.O, Cherthala</p>
@@ -23,14 +23,14 @@ const Footer  = () => {
                 </div>
                 <div className="phone">
                     <div>
-                    <FaPhone size={20} style={{color:"#fff", marginRight:"2rem"}}/>
+                    <FaPhone size={20} style={{color:"#2e2e2f", marginRight:"2rem"}}/>
                     <a href="tel:8111904512">+91-8111904512</a>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </div>                    
                 </div>
                 <div className="email">
                     <h4>
-                    <FaMailBulk size={20} style={{color:"#fff", marginRight:"2rem"}}/>
+                    <FaMailBulk size={20} style={{color:"#2e2e2f;", marginRight:"2rem"}}/>
                     <a href="mailto:sreyas.sc.com">sreyas.sc@gmail.com</a>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </h4>                   
@@ -41,7 +41,7 @@ const Footer  = () => {
              <div className="right">
                 <h4>About Me</h4>
                 <p>Hi! This is Sreyas.
-                 I'm a developer currently pursuing my Masters at <a href="https://www.cet.ac.in/">College of Engineering Thiruvanandhapuram</a>
+                 
                  </p>
                 {/* <div className="social">
                  <FaFacebook size={30} style={{color:"#fff", marginRight:"1rem"}}/>
