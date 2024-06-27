@@ -15,6 +15,10 @@ import sqlimg from "../assets/sql-server.png";
 import vsimg from "../assets/vscode.png"; 
 import gitimg from "../assets/git.png";
 import codepenimg from "../assets/codepen.png";
+import flutterimg from "../assets/flutter-icon.png";
+import dartimg from "../assets/dart.png";
+import mysqlimg from "../assets/myimage.png";
+import githubimg from "../assets/github-icon.png";
 
 
 
@@ -273,10 +277,14 @@ const Heroimg = () => {
     <div class="item"><img src={jsimg} alt="Nike"></img></div>
     <div class="item"><img src={phpimg} alt="Addidas"></img></div>
     <div class="item"><img src={pythonimg} alt="Coca-Cola"></img></div>
-    <div class="item"><img src={sqlimg} alt="apple"></img></div>
+    {/* <div class="item"><img src={sqlimg} alt="apple"></img></div> */}
     <div class="item"><img src={vsimg} alt="apple"></img></div>
     <div class="item"><img src={gitimg} alt="apple"></img></div>
     <div class="item"><img src={codepenimg} alt="apple"></img></div>
+    <div class="item"><img src={flutterimg} alt="apple"></img></div>
+    <div class="item"><img src={dartimg} alt="apple"></img></div>
+    <div class="item"><img src={mysqlimg} alt="apple"></img></div>
+    <div class="item"><img src={githubimg} alt="apple"></img></div>
     {/* <div class="item"><img src="https://logo.clearbit.com/google.com" alt="Google"></img></div>
     <div class="item"><img src="https://logo.clearbit.com/amazon.com" alt="Amazon"></img></div>
     <div class="item"><img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft"></img></div> */}
