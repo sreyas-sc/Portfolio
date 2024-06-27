@@ -5,6 +5,11 @@
 }
 
 .into-img{
+  /* position: absolute; */
+  /* z-index: ; */
+
+  margin: auto;
+  /* margin-top: -90px; */
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -172,8 +177,14 @@ button:active {
 
 .profile-img{
     position: absolute;
-    top: 30%; /* Adjust as needed */
-    left: 50%; /* Adjust distance from right edge */
+    /* position: absolute; */
+    /* z-index: 0; */
+    /* margin-left: 100px; */
+     /* top: -30%; 
+    left: 50%;   */
+    /* margin: auto; */
+    margin-top: -50%;
+    margin-left: 50%;
     transform: translateY(-10%); /* Center vertically */
     animation: jump 2s infinite;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 10));
@@ -439,6 +450,8 @@ button:active {
 
   /* Projects */
 
+  
+  
   /* icon button */
   .button-icon {
     margin: auto;
@@ -506,13 +519,28 @@ button:active {
   }
   
   /* icon button */
+
+  .projectcontainer {
+    /* overflow: auto; */
+    height: auto;
+
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    /* margin-left: ; */
+    padding: 0 15px;
+  }
+
   .projectcard {
     --font-color: #323232;
     --bg-color: #e0e0e0;
     
     width: 250px;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 5%;
+    margin-left: 2%;
     height: 350px;
     border-radius: 20px;
     background: var(--bg-color);
@@ -892,8 +920,10 @@ button:active {
   /* tech stack */
 
   .techstack{
+    align-items: center;
+    justify-content: center;
     margin: auto;
-    margin-left: 30%;
+    /* margin-left: 30%; */
     display: flex;
     padding: 0;
     box-sizing: border-box;
@@ -966,7 +996,9 @@ button:active {
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     position: relative;
-    margin-left: 26%;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
     max-width: 500px;
     width: 100%;
     padding: 10px 20px;
@@ -1135,9 +1167,9 @@ button:active {
     color: #fff;
   }
   
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
+  .wrapper .linkedin:hover,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip::before {
     background: #1da1f2;
     color: #fff;
   }
@@ -1148,6 +1180,28 @@ button:active {
     background: #e4405f;
     color: #fff;
   }
+
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background: #151515;
+    color: #fff;
+  }
+
+  .wrapper .whatsapp:hover,
+  .wrapper .whatsapp:hover .tooltip,
+  .wrapper .whatsapp:hover .tooltip::before {
+    background: #4cd655;
+    color: #fff;
+  }
+
+  .wrapper .phone:hover,
+  .wrapper .phone:hover .tooltip,
+  .wrapper .phone:hover .tooltip::before {
+    background: #1d8cd6;
+    color: #fff;
+  }
+
   .followme{
     margin: auto;
     margin-top: 17px;
@@ -1155,4 +1209,16 @@ button:active {
     align-items: center;
     margin-left: 530px;
   }
+  .eml{
+    /* margin: auto; */
+    /* text-decoration:#090909; */
+    border-color: #090909;
+    /* background-color: #090909; */
+    margin-top: 17px;
+    font-size: 1rem;
+    align-items: center;
+    margin-left: 530px;
+  }
+  /*  */
   
+ 
