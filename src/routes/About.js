@@ -8,9 +8,11 @@ import AboutContent from '../components/AboutContent';
 const About = () => {
   return <div>
     <Navbar/>
-    <HeroImg2 heading=" " text=""/>
-    <AboutContent/>
-    <Footer/>
+    {/* <HeroImg2 heading=" " text=""/> */}
+    <AboutContent>
+      <h5>About Me</h5>
+    </AboutContent>
+    {/* <Footer/> */}
   </div>;
 };
 
