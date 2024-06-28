@@ -616,3 +616,4 @@ const Heroimg = () => {
 }
 
 export default Heroimg;
+  
