@@ -562,7 +562,7 @@ button:active {
     height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0);
   }
   
   .projectcard__descr-wrapper {
@@ -1486,7 +1486,7 @@ button:active {
   
   .skill-per.html {
     /*progreso de las diferentes lenguajes*/
-    width: 70%;
+    width: 100%;
     animation-delay: 0.1s;
   }
   
@@ -1497,6 +1497,42 @@ button:active {
   }
   
   .skill-per.Boostrap {
+    /*progreso de las diferentes lenguajes*/
+    width: 60%;
+    animation-delay: 0.2s;
+  }
+
+  .skill-per.flutter {
+    /*progreso de las diferentes lenguajes*/
+    width: 65%;
+    animation-delay: 0.2s;
+  }
+
+  .skill-per.dart {
+    /*progreso de las diferentes lenguajes*/
+    width: 65%;
+    animation-delay: 0.2s;
+  }
+
+  .skill-per.js {
+    /*progreso de las diferentes lenguajes*/
+    width: 55%;
+    animation-delay: 0.2s;
+  }
+
+  .skill-per.python {
+    /*progreso de las diferentes lenguajes*/
+    width: 85%;
+    animation-delay: 0.2s;
+  }
+
+  .skill-per.java {
+    /*progreso de las diferentes lenguajes*/
+    width: 70%;
+    animation-delay: 0.2s;
+  }
+
+  .skill-per.cpp {
     /*progreso de las diferentes lenguajes*/
     width: 60%;
     animation-delay: 0.2s;
