@@ -48,6 +48,7 @@
     
 }
 
+
 .hero .content h1{
     font-size: 6rem;
     padding: 0.6rem 0 1.5rem;
@@ -58,6 +59,59 @@
     font-weight: 200;
     
 }
+
+/* ////////////////////////////////////////////////////////// */
+@media screen and (max-width: 768px) {
+
+  .mask{
+    width: 100;
+    background-color: #e8e8e8;
+    height: 80vh;
+    /* position: relative; */
+  }
+
+  .mask::after {
+    content: "";
+    /* width: 100%; */
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #b30808;
+    opacity: 0.8;
+}
+
+  .hero {
+    height: 100%;
+    width: max-content;
+    background-color: #e8e8e8;
+    /* background-color: #3c3c3c; */
+  }
+
+  
+  .hero .content {
+      transform: none; /* Reset transform for mobile */
+      top: 20%;
+      left: 20%;
+      /* background-color: #0974f1; */
+      text-align: centre;
+      padding: 0 20px; /* Add padding to center content */
+  }
+
+  .hero .content h1{
+    font-size: 3rem;
+    padding: 0.6rem 0 1.5rem;
+}
+
+.hero .content p{
+    font-size: 2.4rem;
+    font-weight: 200;
+    
+}
+}
+/* //////////////////////////////////////////////////////////// */
+
 
 .content .btn{
     margin: 1rem 0.2rem;
@@ -84,7 +138,7 @@ button:active {
 }
 
 
-@media screen and (max-width:640){
+@media screen and (max-width:768px){
     .hero .content h1{
         font-size: 3rem;
     }
@@ -206,8 +260,9 @@ button:active {
     .profile-img {
         width: 150px; /* Further reduced width for smaller screens */
         height: 150px; /* Further reduced height for smaller screens */
-        top: 50%; /* Adjusted top positioning */
-        right: 100%; /* Adjust distance from right edge */
+        top: 45%; /* Adjusted top positioning */
+        right: 0%; /* Adjust distance from right edge */
+        left: 50%
     }
 }
 
@@ -244,6 +299,54 @@ button:active {
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+
+  .aboutcard {
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 300px;
+    margin-top: -190px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(116, 116, 116, 0.2);
+    padding: 12px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.cardcontent {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 15px;
+  color: #403f3f;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardcontent .cardheading {
+  font-weight: 60;
+  color: #333;
+  font-size: 15px;
+  align-items: center;
+}
+
+.cardcontent .cardpara {
+  line-height: 1;
+  color: #424141;
+  align-items: center;
+}
+    
+}
+
+
 
 .aboutcard:hover {
     box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
@@ -533,6 +636,7 @@ button:active {
     padding: 0 15px;
   }
 
+
   .projectcard {
     --font-color: #323232;
     --bg-color: #e0e0e0;
@@ -552,6 +656,27 @@ button:active {
     position: relative;
   }
   
+  @media screen and (max-width: 768px) {
+    .projectcard {
+      --font-color: #323232;
+      --bg-color: #e0e0e0;
+      /* --bg-color: #6e0f0f; */
+      width: 250px;
+      margin-top: 5%;
+      margin-left: 2%;
+      height:max-content;
+      min-height: 400px;
+      border-radius: 20px;
+      background: var(--bg-color);
+      box-shadow: -9px 9px 18px #5a5a5a,
+                  9px -9px 18px #ffffff;
+      display: flex;
+      flex-direction: column;
+      transition: .4s;
+      position: relative;
+    }
+  }
+
   .projectcard:hover {
     transform: scale(1.02);
     box-shadow: 0px 0px 10px 2px #5a5a5a;
@@ -639,6 +764,16 @@ button:active {
   .btngt:hover svg {
     transform: scale(0.9);
     fill: #333333;
+  }
+  @media screen and (max-width: 768px) {
+    .formore{
+      /* margin: auto; */
+      margin-top: 27px;
+      /* margin-right: -50px; */
+      font-size: 1rem;
+      align-items: center;
+      margin-left: 240px;
+   }
   }
   
   /* Experience */
@@ -1091,6 +1226,7 @@ button:active {
 
   /*  */
 
+
   .timelineexp {
     position: relative;
     width: 660px;
@@ -1260,7 +1396,7 @@ button:active {
   
   /* ================ Timeline Media Queries ================ */
   
-  @media screen and (max-width: 660px) {
+  @media screen and (max-width: 768px) {
   
   .timelineexp {
        width: 100%;
@@ -1338,10 +1474,10 @@ button:active {
       position: relative;
       margin: 1em 0 0 0;
       padding: 1em;
-      background: rgb(245,245,245);
-      -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-      -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-      box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      background: #e8e8e842;
+      -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
       
     z-index: 15;
   }
@@ -1356,16 +1492,6 @@ button:active {
   }
   
   }
-  
-  /* @media screen and (min-width: 400px ?? max-width: 660px) {  
-  .direction-l .desc,
-  .direction-r .desc {
-      margin: 1em 4em 0 4em;
-  }
-  
-  } */
-
-  /* tech stack */
 
   .techstack{
     align-items: center;
@@ -1438,12 +1564,18 @@ button:active {
     }
   }
   /* Skill percentage */
-  .skillcontainer {
 
+  @media screen and (max-width: 768px) {
+   
+  }
+
+
+  .skillcontainer {
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     position: relative;
+    /* margin-left: 30%; */
     margin-left: 30%;
     align-items: center;
     justify-content: center;
@@ -1451,6 +1583,15 @@ button:active {
     width: 100%;
     padding: 10px 20px;
     border-radius: 7px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .skillcontainer {
+      max-width: 500px;
+      margin-left: 8%;
+      margin-top: 10%;
+    }
+    
   }
   
   .skillcontainer .skill-box {
@@ -1559,7 +1700,7 @@ button:active {
     font-weight: bold;
     padding: 2px 6px;
     border-radius: 3px;
-    background: rgb(24, 24, 24);
+    background: #181818;
     z-index: 1;
   }
   
@@ -1693,6 +1834,17 @@ button:active {
     align-items: center;
     margin-left: 530px;
   }
+
+  @media screen and (max-width: 768px) {
+    .followme{
+      margin: auto;
+      margin-top: 17px;
+      font-size: 1rem;
+      align-items: center;
+      margin-left: 250px;
+    }
+  }
+
   .eml{
     /* margin: auto; */
     /* text-decoration:#090909; */
@@ -1703,6 +1855,8 @@ button:active {
     align-items: center;
     margin-left: 530px;
   }
+
+
   /*  */
   
  
