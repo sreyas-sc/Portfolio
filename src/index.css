@@ -243,6 +243,49 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 2.4rem;
+      font-weight: 800;
+      margin-left: 35%;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prjabtcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+
+.prjabtcontent .prjabtheading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.prjabtcontent .prjabtpara {
+  line-height: 1.2;
+}
+
+.prjabtcontent .prjabtbtn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: #0974f1;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+}
 
 /* project about container card */
 .prjabtcard {
@@ -262,8 +305,26 @@ h5 {
   background: #b8babb;
   /* border: 2px solid #313131; */
   border: 1px solid rgba(0,0,0,0);
-
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .prjabtcard {
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #b8babb;
+    border: 1px solid rgba(0,0,0,0);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
 }
 
 .prjabtcontent {
@@ -294,6 +355,38 @@ h5 {
   background: #0974f1;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .prjabtcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .prjabtcontent .prjabtheading {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .prjabtcontent .prjabtpara {
+    line-height: 1.3;
+  }
+  
+  .prjabtcontent .prjabtbtn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #0974f1;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .prjabtcard:hover {
@@ -341,6 +434,42 @@ h5 {
   flex-direction: column;
   transition: .4s;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    --font-color: #323232;
+    --bg-color: #e0e0e0;
+    width: 200px;;
+    margin: 20px;
+    height:fit-content;
+    border-radius: 20px;
+    background: var(--bg-color);
+    box-shadow: -9px 9px 18px #5a5a5a,
+                9px -9px 18px #ffffff;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    position: relative;
+  }
+
+  .card__descr-wrapper {
+    padding: 5px;
+    display: grid;
+  }
+  
+  .card__title {
+    color: var(--font-color);
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 30;
+    font-size: 8px;
+  }
+  
+  .card__descr {
+    font-size: xx-small;
+    color: var(--font-color);
+  }
 }
 
 .card:hover {
