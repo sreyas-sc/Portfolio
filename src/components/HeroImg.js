@@ -595,7 +595,7 @@ const Heroimg = () => {
 </ul>
 <ul>
   <li className='eml'>
-  <p><a href="mailto:sreyas.sc.com">sreyas.sc@gmail.com</a></p>
+  // <p><a href="mailto:sreyas.sc.com">sreyas.sc@gmail.com</a></p>
   </li>
 </ul>
 
