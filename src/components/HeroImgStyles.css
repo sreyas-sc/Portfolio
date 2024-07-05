@@ -1715,6 +1715,48 @@ button:active {
     background-color: rgb(0, 0, 0);
     transform: translateX(-50%) rotate(45deg);
   }
+
+
+  /* Git Commits and Streak start*/
+  .commits{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #000; */
+  }
+
+  .streak{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* .commits img{
+    width: 100%;
+    background-color: #000;
+  } */
+
+  @media screen and (max-width: 768px) {
+    .commits img{
+      margin: auto;
+      width: 450px;
+    }
+    .commits{
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      /* background-color: #000; */
+    }
+  
+    .streak{
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  /* Git Commits and Streak end */
+
+
   /* follow me on icons */
   
   .wrapper {
@@ -1862,3 +1904,6 @@ button:active {
     align-items: center;
     margin-left: 530px;
   }
+
+
+
