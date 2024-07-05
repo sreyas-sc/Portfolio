@@ -220,7 +220,7 @@ const Project = () => {
 
 
     {/* <HeroImg2 heading=""/> */}
-    <Footer/>
+    {/* <Footer/> */}
     <div className='content'>
     {/* <h1>PROJECT</h1> */}
     
