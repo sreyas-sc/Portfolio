@@ -27,13 +27,20 @@ import {faFacebook,faTwitter,faInstagram, faGithub, faWhatsapp, faLinkedin, faTe
 
 const Heroimg = () => {
   return (
+
+    
     <div className="hero">
         <div className="mask">
         </div>
 
+        
+        
+
         <div className="content">
             <p className="hero .content p">Hi I'm Sreyas S</p>
         </div>
+        
+      
         <div className="profile-image">
             <img src={MyImg} alt="Profile Image" className="profile-img" />
         </div>
@@ -415,7 +422,7 @@ const Heroimg = () => {
     <span class="title">HTML</span>
     <div class="skill-bar">
       <span class="skill-per html">
-        <span class="tooltip">100%</span>
+        {/* <span class="tooltip">100%</span> */}
       </span>
     </div>
   </div>
@@ -424,7 +431,7 @@ const Heroimg = () => {
     <span class="title">SCSS</span>
     <div class="skill-bar">
       <span class="skill-per scss">
-        <span class="tooltip">80%</span>
+        {/* <span class="tooltip">80%</span> */}
       </span>
     </div>
   </div>
@@ -433,7 +440,7 @@ const Heroimg = () => {
     <span class="title">Flutter</span>
     <div class="skill-bar">
       <span class="skill-per flutter">
-        <span class="tooltip">65%</span>
+        {/* <span class="tooltip">65%</span> */}
       </span>
     </div>
   </div>
@@ -442,7 +449,7 @@ const Heroimg = () => {
     <span class="title">Dart</span>
     <div class="skill-bar">
       <span class="skill-per dart">
-        <span class="tooltip">65%</span>
+        {/* <span class="tooltip">65%</span> */}
       </span>
     </div>
   </div>
@@ -451,7 +458,7 @@ const Heroimg = () => {
     <span class="title">JS</span>
     <div class="skill-bar">
       <span class="skill-per js">
-        <span class="tooltip">55%</span>
+        {/* <span class="tooltip">55%</span> */}
       </span>
     </div>
   </div>
@@ -460,7 +467,7 @@ const Heroimg = () => {
     <span class="title">Python</span>
     <div class="skill-bar">
       <span class="skill-per python">
-        <span class="tooltip">85%</span>
+        {/* <span class="tooltip">85%</span> */}
       </span>
     </div>
   </div>
@@ -469,7 +476,7 @@ const Heroimg = () => {
     <span class="title">java</span>
     <div class="skill-bar">
       <span class="skill-per java">
-        <span class="tooltip">70%</span>
+        {/* <span class="tooltip">70%</span> */}
       </span>
     </div>
   </div>
@@ -478,7 +485,7 @@ const Heroimg = () => {
     <span class="title">C++</span>
     <div class="skill-bar">
       <span class="skill-per cpp">
-        <span class="tooltip">60%</span>
+        {/* <span class="tooltip">60%</span> */}
       </span>
     </div>
   </div>
@@ -487,7 +494,7 @@ const Heroimg = () => {
     <span class="title">react</span>
     <div class="skill-bar">
       <span class="skill-per Boostrap">
-        <span class="tooltip">60%</span>
+        {/* <span class="tooltip">60%</span> */}
       </span>
     </div>
   </div>
@@ -495,6 +502,8 @@ const Heroimg = () => {
 
 </div>
 <p className='followme'>Connect with me on</p>
+<br></br>
+<p className='followme'>sreyas.sc@gmail.com</p>
 <div>
   {/* <table>
     <tr>
@@ -592,11 +601,18 @@ const Heroimg = () => {
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.48 22.926l-1.193.658c-6.979 3.621-19.082-17.494-12.279-21.484l1.145-.637 3.714 6.467-1.139.632c-2.067 1.245 2.76 9.707 4.879 8.545l1.162-.642 3.711 6.461zm-9.808-22.926l-1.68.975 3.714 6.466 1.681-.975-3.715-6.466zm8.613 14.997l-1.68.975 3.714 6.467 1.681-.975-3.715-6.467z"/></svg>
     </a>
   </li>
+  <li class="icon gmail">
+  <a href="mailto:sreyas.sc@gmail.com">
+  <span class="tooltip">Gmail</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="gmail"><path d="M14.5 2h-13A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm-1.766 1L8 6.738 3.266 3h9.468zM2 13V4.646l6 4.615 6-4.616V13H2z"></path></svg>
+  </a>
+  </li>
 </ul>
 <ul>
   <li className='eml'>
-  // <p><a href="mailto:sreyas.sc.com">sreyas.sc@gmail.com</a></p>
+  {/* <p><a href="mailto:sreyas.sc.com">sreyas.sc@gmail.com</a></p> */}
   </li>
+  
 </ul>
 
 
@@ -610,7 +626,12 @@ const Heroimg = () => {
 </button>
         </div> */}
 
+
+        
+
     </div>
+
+    
     
   );
 }
