@@ -1827,6 +1827,13 @@ button:active {
     color: #fff;
   }
 
+  .wrapper .gmail:hover,
+  .wrapper .gmail:hover .tooltip,
+  .wrapper .gmail:hover .tooltip::before {
+    background: #dd2b1b;
+    color: #fff;
+  }
+
   .followme{
     margin: auto;
     margin-top: 17px;
@@ -1855,8 +1862,3 @@ button:active {
     align-items: center;
     margin-left: 530px;
   }
-
-
-  /*  */
-  
- 
