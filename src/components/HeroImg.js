@@ -499,10 +499,31 @@ const Heroimg = () => {
     </div>
   </div>
 </div>
+{/* Github commits and streak */}
+<h1 className='education-heading'>Github</h1>
+
+<div className='commits' >
+  <p align="center">
+  <img src="https://ghchart.rshah.org/sreyas-sc" alt="2016rshah's Github chart" />
+  </p>
+</div>
+
+
+<div className='streak' >
+  <p align="center">
+    <a href="https://github.com/sreyas-sc/github-readme-streak-stats">
+        <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Sreyas's streak" src="https://github-readme-streak-stats.herokuapp.com/?user=sreyas-sc&theme=dark&hide_border=truee&stroke=0000&background=e8e8e8&date_format=j%20M%5B%20Y%5D&fire=0f9c08&ring=0f9c08&currStreakNum=0f9c08&&currStreakLabel=0f9c08&sideNums=0f9c08&sideLabels=0f9c08"/>
+    </a>
+  </p>
+</div>
+
+
+{/* github commits and streak */}
 
 </div>
+
 <p className='followme'>Connect with me on</p>
-<br></br>
+{/* <br></br> */}
 <p className='followme'>sreyas.sc@gmail.com</p>
 <div>
   {/* <table>
