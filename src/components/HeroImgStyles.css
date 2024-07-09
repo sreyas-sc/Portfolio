@@ -57,8 +57,31 @@
 .hero .content p{
     font-size: 1.4rem;
     font-weight: 200;
-    
+    white-space: nowrap;
+    white-space: nowrap;
+    overflow: hidden; /* Ensures the text stays within the container */
+    border-right: .15em solid rgb(92, 91, 91); /* Adds a blinking cursor */
+    width: 0; /* Start with zero width */
+    animation: typing 3s steps(12, end) 1s forwards, blink-caret .75s step-end infinite;
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch;
+  }
+}
+
+/* @keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(67, 67, 67);
+  }
+} */
 
 /* ////////////////////////////////////////////////////////// */
 @media screen and (max-width: 768px) {
@@ -1904,3 +1927,6 @@ button:active {
     align-items: center;
     margin-left: 530px;
   }
+
+
+
