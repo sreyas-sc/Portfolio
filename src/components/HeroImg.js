@@ -37,7 +37,7 @@ const Heroimg = () => {
         
 
         <div className="content">
-            <p className="hero .content p">Hey I'm Sreyas S</p>
+            <p className="hero .content p">Hi! I'm Sreyas S</p>
         </div>
         
       
