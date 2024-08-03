@@ -87,7 +87,7 @@
 @media screen and (max-width: 768px) {
 
   .mask{
-    width: 100;
+    width: 100%;
     background-color: #e8e8e8;
     height: 80vh;
     /* position: relative; */
@@ -95,8 +95,8 @@
 
   .mask::after {
     content: "";
-    /* width: 100%; */
-    width: max-content;
+    width: 100%;
+/*     width: max-content; */
     height: 100%;
     position: absolute;
     top: 0;
@@ -107,7 +107,8 @@
 
   .hero {
     height: 100%;
-    width: max-content;
+/*     width: max-content; */
+      width: 100%;
     background-color: #e8e8e8;
     /* background-color: #3c3c3c; */
   }
