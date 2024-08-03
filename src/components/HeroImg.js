@@ -26,6 +26,18 @@ import {faFacebook,faTwitter,faInstagram, faGithub, faWhatsapp, faLinkedin, faTe
 
 
 const Heroimg = () => {
+  /////////////////////////
+   useEffect(() => {
+    const metaViewport = document.createElement('meta');
+    metaViewport.name = 'viewport';
+    metaViewport.content = 'width=device-width, initial-scale=1.0';
+    document.head.appendChild(metaViewport);
+
+    return () => {
+      document.head.removeChild(metaViewport);
+    };
+  }, []);
+  /////////////////////////////
   return (
 
     
