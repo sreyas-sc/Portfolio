@@ -366,10 +366,10 @@ const Heroimg = () => {
 <li>
     <div class="direction-r">
         <div class="flag-wrapper">
-            <span class="flag">Freelancer</span>
-            <span class="time-wrapper"><span class="time">present</span></span>
+            <span class="flag">Techfriar</span>
+            <span class="time-wrapper"><span class="time">Aug 05 - Present</span></span>
         </div>
-        <div class="desc">Open to work</div>
+        <div class="desc">MERN Stack Trainee</div>
     </div>
 </li>
 
