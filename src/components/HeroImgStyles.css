@@ -90,27 +90,23 @@
     width: 100%;
     background-color: #e8e8e8;
     height: 80vh;
-    /* position: relative; */
   }
 
   .mask::after {
     content: "";
     width: 100%;
-/*     width: max-content; */
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: ##e8e8e8;
+    background-color: #e8e8e8;
     opacity: 0.8;
 }
 
   .hero {
     height: 100%;
-/*     width: max-content; */
       width: 100%;
     background-color: #e8e8e8;
-    /* background-color: #e8e8e8; */
   }
 
   
@@ -118,7 +114,6 @@
       transform: none; /* Reset transform for mobile */
       top: 20%;
       left: 20%;
-      /* background-color: #0974f1; */
       text-align: centre;
       padding: 0 20px; /* Add padding to center content */
   }
@@ -164,6 +159,26 @@ button:active {
 
 
 @media screen and (max-width:768px){
+
+    .hero{
+      width: 100vh;
+      /* border: 1px solid red; */
+      min-width: 100%;
+    }
+    .profile-image{
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+    .photo-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /* border: 1px solid  red; */
+      height: 60px;
+      max-height: fit-content;
+
+    }
     .hero .content h1{
         font-size: 3rem;
     }
@@ -1591,6 +1606,12 @@ button:active {
   /* Skill percentage */
 
   @media screen and (max-width: 768px) {
+
+    .percentage{
+    }
+
+    .skillcontainer{
+    }
    
   }
 

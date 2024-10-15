@@ -1,6 +1,5 @@
 import React from 'react';
 import "./HeroImgStyles.css";
-import IntroImg from "../assets/back1.jpg";
 import MyImg from "../assets/myimage.png"; // Assuming you have imported your image
 import reactimg from "../assets/react.png"; // Import Link from react-router-dom
 import cssimg from "../assets/css-3.png"; 
@@ -51,13 +50,15 @@ const Heroimg = () => {
         
         
 
-        <div className="content">
-            <p className="hero .content p">Hey, I'm Sreyas S</p>
-        </div>
+        <div className="photo-container">
+          <div className="content">
+              <p className="hero .content p">Hey, I'm Sreyas S</p>
+          </div>
+          
         
-      
-        <div className="profile-image">
-            <img src={MyImg} alt="Profile Image" className="profile-img" />
+          <div className="profile-image">
+              <img src={MyImg} alt="Profile Image" className="profile-img" />
+          </div>
         </div>
         {/* About */}
         <div className="aboutcard">
