@@ -46,16 +46,10 @@ const Heroimg = () => {
     <div className="hero">
         <div className="mask">
         </div>
-
-        
-        
-
         <div className="photo-container">
           <div className="content">
               <p className="hero .content p">Hey, I'm Sreyas S</p>
           </div>
-          
-        
           <div className="profile-image">
               <img src={MyImg} alt="Profile Image" className="profile-img" />
           </div>
@@ -69,7 +63,7 @@ const Heroimg = () => {
                 </p>
                 {/* <button className="btn">My Resume</button> */}
                 <button className="btn" onClick={() => window.location.href = 'https://drive.google.com/file/d/1xdVbstCrwrfwyofkWtrbIuK62irpAXXb/view?usp=sharing'}>
-  My Resume
+  Resume
 </button>
 
             </div>
