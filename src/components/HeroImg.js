@@ -62,7 +62,7 @@ const Heroimg = () => {
                     I am a MCA graduate with a passion towards coding and web development residing in Alappuzha of kerala with 1+ year  experience in the IT field
                 </p>
                 {/* <button className="btn">My Resume</button> */}
-                <button className="btn" onClick={() => window.location.href = 'https://drive.google.com/file/d/1xdVbstCrwrfwyofkWtrbIuK62irpAXXb/view?usp=sharing'}>
+                <button className="btn" onClick={() => window.location.href = 'https://drive.google.com/file/d/1lARc3xCKV6UGEHzfWhtJXXXToUEp8-Fq/view?usp=sharing'}>
   Resume
 </button>
 
