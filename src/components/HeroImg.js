@@ -39,6 +39,16 @@ const Heroimg = () => {
       document.head.removeChild(metaViewport);
     };
   }, []);
+
+  const calculateDuration = (startDate) => {
+    const start = new Date(startDate);
+    const now = new Date();
+    const diff = now - start;
+    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+    const months = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
+    const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+    return `${years} years, ${months} months, ${days} days`;
+  };
   /////////////////////////////
   return (
 
@@ -362,10 +372,19 @@ const Heroimg = () => {
 
 {/* <!-- Item 1 --> */}
 <li>
+    <div class="direction-l">
+        <div class="flag-wrapper">
+            <span class="flag">Williams Lea</span>
+            <span class="time-wrapper"><span class="time">Dec 02 - Present</span></span>
+        </div>
+        <div class="desc">Software Engineer, Trainee ({calculateDuration('2024-12-02')})</div>
+    </div>
+</li>
+<li>
     <div class="direction-r">
         <div class="flag-wrapper">
             <span class="flag">Techfriar</span>
-            <span class="time-wrapper"><span class="time">Aug 05 - Present</span></span>
+            <span class="time-wrapper"><span class="time">Aug 06 - Nov 08</span></span>
         </div>
         <div class="desc">MERN Stack Trainee</div>
     </div>
