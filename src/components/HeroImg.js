@@ -18,8 +18,6 @@ import flutterimg from "../assets/flutter-icon.png";
 import dartimg from "../assets/dart.png";
 import mysqlimg from "../assets/myimage.png";
 import githubimg from "../assets/github-icon.png";
-
-
 import {faFacebook,faTwitter,faInstagram, faGithub, faWhatsapp, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
 
 
