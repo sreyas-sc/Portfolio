@@ -36,13 +36,35 @@
     background-color: #e8e8e8;
 
 }
+.first-container{
+  /* margin-top: 50px; */
+  display: flex;
+
+  width: 100%;
+  /* height: 290px; */
+  background-color: #0974f1;
+}
+
+.hero .content{
+  position: absolute;
+  margin-top: -120px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #000; */
+  z-index: 1;
+}
+
+
 
 
 
 .hero .content{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    /* position: relative; */
     transform: translate(-30%,-70%);
-    top: 50%;
+    /* top: 50%; */
     left: 20%;
     text-align: center;
     
@@ -54,24 +76,106 @@
     padding: 0.6rem 0 1.5rem;
 }
 
-.hero .content p{
-    font-size: 1.4rem;
-    font-weight: 200;
-    white-space: nowrap;
-    white-space: nowrap;
-    overflow: hidden; /* Ensures the text stays within the container */
-    border-right: .15em solid rgb(92, 91, 91); /* Adds a blinking cursor */
-    width: 0; /* Start with zero width */
-    animation: typing 3s steps(12, end) 1s forwards, blink-caret .75s step-end infinite;
+.initial-container{
+  /* background-color: #5c5c5c; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name-container{
+  /* background-color: #222; */
+  min-width: 50%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.profile-image{
+  margin-top: 150px;
+  margin-right: 50%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+.hero .initial-container .name-container p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: rgb(62, 62, 62);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  
+  /* Dotted text effect */
+  background-image: linear-gradient(90deg, #2c3e50 50%, transparent 50%),
+                    linear-gradient(90deg, #2c3e50 50%, transparent 50%);
+  background-size: 12px 2px, 12px 2px;
+  background-position: 0 0, 0 100%;
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Typing animation */
+  width: 0;
+  animation: 
+    typing 3s steps(20, end) forwards,
+    dotted-text-reveal 3s steps(20, end) forwards;
 }
 
 @keyframes typing {
-  from {
+  from { 
     width: 0;
   }
-  to {
-    width: 12ch;
+  to { 
+    width: 100%; 
   }
+}
+
+@keyframes dotted-text-reveal {
+  from { 
+    background-size: 0 2px, 0 2px;
+  }
+  to { 
+    background-size: 12px 2px, 12px 2px;
+  }
+}
+
+/* Cursor effect */
+.hero .initial-container .name-container p::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: #2c3e50;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero .initial-container .name-container p {
+    font-size: 3.2rem;
+    background-size: 8px 2px, 8px 2px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero .initial-container .name-container p {
+    font-size: 2.4rem;
+    background-size: 6px 2px, 6px 2px;
+  }
+}
+.initial-container .name-container{
+  margin-top: 150px;
 }
 
 /* @keyframes blink-caret {
@@ -89,19 +193,16 @@
   .mask{
     width: 100%;
     background-color: #e8e8e8;
+    /* background-color: #ff98a2; */
     height: 80vh;
+    z-index: 0;
   }
 
+
+
   .mask::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #e8e8e8;
-    opacity: 0.8;
-}
+    display: none;
+  }
 
   .hero {
     height: 100%;
@@ -129,6 +230,19 @@
     font-weight: 200;
     
 }
+
+
+.profile-img{
+  margin-left: 50%;
+  transform: translateY(-10%); 
+  animation: jump 2s infinite;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 10));
+  width: 250px; /* Set desired width */
+  height: 250px; /* Set desired height */
+
+}
+
+
 }
 /* //////////////////////////////////////////////////////////// */
 
@@ -162,23 +276,44 @@ button:active {
 
     .hero{
       width: 100vh;
-      /* border: 1px solid red; */
       min-width: 100%;
     }
-    .profile-image{
+
+    .hero .initial-container{
+      display: flex;
+      flex-direction: column;
+      /* background-color: #b49c9c; */
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    .hero .initial-container .name-container{
+      margin-top: 90px;
+      max-height: fit-content;
+    }
+    .hero .initial-container .profile-image{
+      max-height: fit-content;
+      margin-top: 0px;
       display: flex;
       align-items: center;
-      margin-left: 20px;
+      justify-content: center;
     }
-    .photo-container{
+    .hero .initial-container .profile-image img{
+      width: 200px;
+      height: 200px;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      /* border: 1px solid  red; */
-      height: 60px;
-      max-height: fit-content;
-
+      margin-left: 160%;
+      justify-content: center;
+      border-radius: 50%;
+      align-items: center;
     }
+
+    .hero .initial-container .name-container p{
+      font-size: 2.5rem;
+    }
+
     .hero .content h1{
         font-size: 3rem;
     }
@@ -270,16 +405,16 @@ button:active {
 
 
 .profile-img{
-    position: absolute;
+    /* position: absolute; */
     /* position: absolute; */
     /* z-index: 0; */
     /* margin-left: 100px; */
      /* top: -30%; 
     left: 50%;   */
     /* margin: auto; */
-    margin-top: -50%;
-    margin-left: 50%;
-    transform: translateY(-10%); /* Center vertically */
+    /* margin-top: -50%; */
+    /* margin-left: 50%; */
+    transform: translateY(-10%); 
     animation: jump 2s infinite;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 10));
     width: 250px; /* Set desired width */
@@ -296,15 +431,7 @@ button:active {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .profile-img {
-        width: 150px; /* Further reduced width for smaller screens */
-        height: 150px; /* Further reduced height for smaller screens */
-        top: 45%; /* Adjusted top positioning */
-        right: 0%; /* Adjust distance from right edge */
-        left: 50%
-    }
-}
+
 
 
 
@@ -326,7 +453,7 @@ button:active {
     justify-content: center;
     width: 650px;
     height: 400px;
-    margin-top: -190px;
+    /* margin-top: -190px; */
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 10px 20px rgba(116, 116, 116, 0.2);
@@ -342,14 +469,16 @@ button:active {
 
 @media screen and (max-width: 768px) {
 
+
+
   .aboutcard {
-    position:relative;
+    /* position:relative; */
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 550px;
+    width: 90%;
     height: 300px;
-    margin-top: -190px;
+    /* margin-top: -190px; */
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 10px 20px rgba(116, 116, 116, 0.2);
@@ -1437,6 +1566,11 @@ button:active {
   /* ================ Timeline Media Queries ================ */
   
   @media screen and (max-width: 768px) {
+
+  .timeline{
+    /* background-color: #0974f1; */
+    width: 100%;
+  }
   
   .timelineexp {
        width: 100%;
@@ -1617,6 +1751,7 @@ button:active {
 
 
   .skillcontainer {
+    display: none;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
