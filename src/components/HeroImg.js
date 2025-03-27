@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./HeroImgStyles.css";
 import MyImg from "../assets/myimage.png"; // Assuming you have imported your image
 import reactimg from "../assets/react.png"; // Import Link from react-router-dom
@@ -18,7 +18,6 @@ import flutterimg from "../assets/flutter-icon.png";
 import dartimg from "../assets/dart.png";
 import mysqlimg from "../assets/myimage.png";
 import githubimg from "../assets/github-icon.png";
-import { useEffect } from 'react';
 
 
 import {faFacebook,faTwitter,faInstagram, faGithub, faWhatsapp, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
@@ -29,14 +28,24 @@ import {faFacebook,faTwitter,faInstagram, faGithub, faWhatsapp, faLinkedin, faTe
 
 const Heroimg = () => {
   /////////////////////////
-   useEffect(() => {
-    const metaViewport = document.createElement('meta');
-    metaViewport.name = 'viewport';
-    metaViewport.content = 'width=device-width, initial-scale=1.0';
-    document.head.appendChild(metaViewport);
+  useEffect(() => {
+    // Ensure proper viewport meta tag
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    if (!metaViewport) {
+      const meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no';
+      document.head.appendChild(meta);
+    }
 
+    // Responsive design adjustments
+    const handleResize = () => {
+      document.body.style.zoom = 1;
+    };
+
+    window.addEventListener('resize', handleResize);
     return () => {
-      document.head.removeChild(metaViewport);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -54,16 +63,22 @@ const Heroimg = () => {
 
     
     <div className="hero">
-        <div className="mask">
-        </div>
-        <div className="photo-container">
-          <div className="content">
-              <p className="hero .content p">Hey, I'm Sreyas S</p>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+        
+          
+
+          <div className="initial-container">
+              <div className="name-container">
+                <p className="hero-name">Hey, I'm Sreyas S</p>
+              </div>
+              <div className="profile-image">
+                <img src={MyImg} alt="Profile Image" className="profile-img" />
+              </div>
           </div>
-          <div className="profile-image">
-              <img src={MyImg} alt="Profile Image" className="profile-img" />
-          </div>
-        </div>
+          
+        
         {/* About */}
         <div className="aboutcard">
             <div className="cardcontent">
@@ -112,7 +127,7 @@ const Heroimg = () => {
       <time class="tl-time" datetime="2023-06-14">June 14, 2023</time>
     </div>
     <div class="tl-body">
-      <p>Studied Biology- Sceience(Plustwo) in H.S.S Kandamangalam </p>
+      <p>Studied Biology- Science(Plustwo) in H.S.S Kandamangalam </p>
     </div>
   </div>
 </div>
