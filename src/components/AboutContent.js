@@ -4,8 +4,6 @@ import React from 'react';
 
 import IntroImg from "../assets/Sreyas_Resume.pdf";
 import MyImg from "../assets/myimage.png"; // Assuming you have imported your image
-
-
 const AboutContent = () => {
   return (
     <div className="content">
