@@ -40,7 +40,7 @@ const Footer  = () => {
 
              <div className="right">
                 {/* <h4>About Me</h4>
-                <p>Hi! This is Sreyas.
+     
                  
                  </p> */}
 
@@ -62,7 +62,7 @@ const Footer  = () => {
         <FontAwesomeIcon icon={faGithub} size="2x" style={{marginRight:'1rem'}}/>
       </a> */}
       
-      {/* <a href="https://wa.me/918111904512?Hey!"
+      {/* <a href="https://wa.me/918111904512?Hey"
         className="whatsapp social">
         <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{marginRight:'1rem'}}/>
       </a> */}

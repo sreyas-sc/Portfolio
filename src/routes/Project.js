@@ -34,7 +34,7 @@ const Project = () => {
   <div class="prjabtcontent">
     <p class="prjabtheading">
     </p><p class="prjabtpara">
-      Hey! here are some of the projects that i've done throughout my academics and those that i've done as a hobby. For more visit my github
+      Hey here are some of the projects that i've done throughout my academics and those that i've done as a hobby. For more visit my github
     </p>
      <a href="https://github.com/sreyas-sc">
     <button class="prjaptbtn">Read more</button>
