@@ -66,13 +66,26 @@ const Navbar = () => {
       {/* Overlay for mobile menu */}
       {click && <div className="menu-overlay" onClick={() => setClick(false)}></div>}
 
-      <style jsx>{`
+      <style jsx global>{`
         * {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
         }
 
+        /* Add padding to body to account for fixed header */
+        body {
+          padding-top: 70px;
+        }
+
+        @media screen and (max-width: 768px) {
+          body {
+            padding-top: 60px;
+          }
+        }
+      `}</style>
+
+      <style jsx>{`
         .header {
           display: flex;
           justify-content: space-between;
@@ -81,19 +94,21 @@ const Navbar = () => {
           position: fixed;
           width: 100%;
           height: 70px;
+          top: 0;
+          left: 0;
           z-index: 1000;
           transition: all 0.3s ease;
           background: #e8e8e8;
-  border: 1px solid #e8e8e8;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+          border: 1px solid #e8e8e8;
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+          box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
         }
 
         .header-bg {
           background: #e8e8e8;
-  border: 1px solid #e8e8e8;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+          border: 1px solid #e8e8e8;
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+          box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
         }
 
         .logo-button {
@@ -280,6 +295,7 @@ const Navbar = () => {
         .logo-button:focus,
         .nav-menu li button:focus,
         .hamburger:focus {
+          outline: 2px solid #ef4444;
           outline-offset: 2px;
         }
 
@@ -301,6 +317,11 @@ const Navbar = () => {
             opacity: 1;
             transform: translateX(0);
           }
+        }
+
+        /* Prevent body scroll when menu is open */
+        :global(body.menu-open) {
+          overflow: hidden;
         }
       `}</style>
     </>

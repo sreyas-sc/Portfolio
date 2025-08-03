@@ -71,7 +71,7 @@
 
   .nav-menu li button:hover {
     background: rgba(0, 0, 0, 0.05);
-    color: #ef4444;
+    /* color: #ef4444; */
     transform: translateY(-2px);
   }
 
@@ -88,7 +88,7 @@
   }
 
   .hamburger:hover {
-    color: #ef4444;
+    /* color: #ef4444; */
   }
 
   .menu-overlay {
@@ -149,7 +149,7 @@
     .nav-menu li button:hover {
       background: rgba(239, 68, 68, 0.1);
       border-color: rgba(239, 68, 68, 0.3);
-      color: #ef4444;
+      /* color: #ef4444; */
       transform: translateY(-2px);
     }
 
@@ -208,7 +208,7 @@
   .logo-button:focus,
   .nav-menu li button:focus,
   .hamburger:focus {
-    outline: 2px solid #ef4444;
+    /* outline: 2px solid #ef4444; */
     outline-offset: 2px;
   }
 
