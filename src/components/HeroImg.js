@@ -71,7 +71,7 @@ const Heroimg = () => {
 
           <div className="initial-container">
               <div className="name-container">
-                <p className="hero-name">Hey, I'm Sreyas S</p>
+                <p className="hero-name">Hey, I'm Sreyas</p>
               </div>
               <div className="profile-image">
                 <img src={MyImg} alt="Profile Image" className="profile-img" />
