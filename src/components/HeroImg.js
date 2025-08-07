@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import "./HeroImgStyles.css";
-import MyImg from "../assets/myimage.png"; // Assuming you have imported your image
+import MyImg from "../assets/crop2.png"; // Assuming you have imported your image
 import reactimg from "../assets/react.png"; // Import Link from react-router-dom
 import cssimg from "../assets/css-3.png"; 
 import cimg from "../assets/c-.png"; 
@@ -71,7 +71,7 @@ const Heroimg = () => {
 
           <div className="initial-container">
               <div className="name-container">
-                <p className="hero-name">Hey, I'm Sreyas</p>
+                <p className="hero-name">Hey, I'm Sreyas S</p>
               </div>
               <div className="profile-image">
                 <img src={MyImg} alt="Profile Image" className="profile-img" />
