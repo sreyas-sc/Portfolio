@@ -107,7 +107,7 @@ const Heroimg = () => {
       <time class="tl-time" datetime="2023-06-20">October 2022 - June 2024</time>
     </div>
     <div class="tl-body">
-      <p>Graduated with a Master of Computer Applications (MCA) from the College of Engineering, Trivandrum.</p>
+      <p>Graduated with a Master of Computer Applications (MCA) from the <b>College of Engineering, Trivandrum.</b></p>
     </div>
   </div>
   <div class="tl-content">
@@ -117,7 +117,7 @@ const Heroimg = () => {
       <time class="tl-time" datetime="2023-06-18">June 2018 - April 2021</time>
     </div>
     <div class="tl-body">
-      <p>Had done my undergraduate degree in BCA(Batchelors) from Naipunnya school of management Cherthala</p>
+      <p>Had done my undergraduate degree in BCA(Batchelors) from <b>Naipunnya school of management Cherthala</b></p>
     </div>
   </div>
   <div class="tl-content">
@@ -127,7 +127,7 @@ const Heroimg = () => {
       <time class="tl-time" datetime="2023-06-14">June 14, 2023</time>
     </div>
     <div class="tl-body">
-      <p>Studied Biology- Science(Plustwo) in H.S.S Kandamangalam </p>
+      <p>Studied Biology- Science(Plustwo) in <b>H.S.S Kandamangalam</b> </p>
     </div>
   </div>
 </div>
