@@ -385,7 +385,7 @@ const Heroimg = () => {
             <span class="flag">Williams Lea</span>
             <span class="time-wrapper"><span class="time">Dec 02 - Present</span></span>
         </div>
-        <div class="desc">Software Engineer, Trainee ({calculateDuration('2024-12-02')})</div>
+        <div class="desc">Software Engineer ({calculateDuration('2024-12-02')})</div>
     </div>
 </li>
 <li>
