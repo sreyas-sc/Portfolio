@@ -327,7 +327,6 @@ const Heroimg = () => {
             <div className="item"><img src={githubimg} alt="github"></img></div>
           </div>
         </div>
-<<<<<<< HEAD
       </div>
 
       <div className='percentage fade-in-up delay-500'>
@@ -340,16 +339,7 @@ const Heroimg = () => {
               </div>
             </div>
           ))}
-=======
-        <div class="desc">Software Engineer ({calculateDuration('2024-12-02')})</div>
-    </div>
-</li>
-<li>
-    <div class="direction-r">
-        <div class="flag-wrapper">
-            <span class="flag">Techfriar</span>
-            <span class="time-wrapper"><span class="time">Aug 06 - Nov 08</span></span>
->>>>>>> 206c691b4ae3815ae4246416ff372f4bc5b270e2
+
         </div>
 
         {/* Github stats */}
