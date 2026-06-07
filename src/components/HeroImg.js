@@ -84,7 +84,7 @@ const Heroimg = () => {
             <div className="cardcontent">
                 <p className="cardheading">ABOUT ME</p>
                 <p className="cardpara">
-                I'm Sreyas, a passionate Software Engineer at Williams Lea with 2.5+ years of IT experience. MCA graduate specializing in full-stack development using ReactJS, NodeJS, Python, JavaScript, and AWS.
+                I'm Sreyas, a passionate Software Engineer at Williams Lea with 3+ years of IT experience. MCA graduate specializing in full-stack development using ReactJS, NodeJS, Python, JavaScript, and AWS.
                 </p>
                 {/* <button className="btn">My Resume</button> */}
                 <button className="btn" onClick={() => window.location.href = 'https://drive.google.com/file/d/1lARc3xCKV6UGEHzfWhtJXXXToUEp8-Fq/view?usp=sharing'}>
@@ -385,7 +385,7 @@ const Heroimg = () => {
             <span class="flag">Williams Lea</span>
             <span class="time-wrapper"><span class="time">Dec 02 - Present</span></span>
         </div>
-        <div class="desc">Software Engineer, Trainee ({calculateDuration('2024-12-02')})</div>
+        <div class="desc">Software Engineer ({calculateDuration('2024-12-02')})</div>
     </div>
 </li>
 <li>
