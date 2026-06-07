@@ -5,8 +5,9 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [color, setColor] = useState(false);
+  const navigate = useNavigate();
   // const navigate = useNavigate();
-  navigate(path);
+  // navigate(path);
 
   const handleClick = () => setClick(!click);
 
