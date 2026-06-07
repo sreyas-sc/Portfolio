@@ -61,7 +61,8 @@ const Heroimg = () => {
         </div>
         <div className="profile-image fade-in-up delay-100">
           {/* Added floating animation class */}
-          <img src={MyImg} alt="Profile Image" className="profile-img floating" />
+          // <img src={MyImg} alt="Profile Image" className="profile-img floating" />
+          <img src={MyImg} alt="Profile" className="profile-img floating" />
         </div>
       </div>
 
@@ -166,7 +167,14 @@ const Heroimg = () => {
                 <a className="link" href="https://github.com/sreyas-sc/PharMap">Preview</a>
               </div>
               <div>
-                <a className="link" href="#">Code</a>
+                <a
+                className="link"
+                href="https://github.com/sreyas-sc/PharMap"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Code
+                </a>
               </div>
             </div>
           </div>
