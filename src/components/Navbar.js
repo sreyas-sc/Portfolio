@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+// import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [color, setColor] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
+  navigate(path);
 
   const handleClick = () => setClick(!click);
 
